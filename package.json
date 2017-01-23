@@ -1,0 +1,43 @@
+{
+  "name": "ngx-siema",
+  "version": "1.0.0",
+  "description": "Lightweight and simple carousel with no dependencies.",
+  "main": "lib/index.js",
+  "scripts": {
+    "prepublish": "npm run build && npm run build:aot",
+    "build": "node_modules/.bin/tsc",
+    "build:aot": "node_modules/.bin/ngc -p tsconfig-aot.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LexZhukov/ngx-siema.git"
+  },
+  "keywords": [
+    "angular",
+    "angular2",
+    "typescript",
+    "siema",
+    "component"
+  ],
+  "author": "Alexander Zhukov <lexzhukovpro@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LexZhukov/ngx-siema/issues"
+  },
+  "homepage": "https://github.com/LexZhukov/ngx-siema#readme",
+  "dependencies": {
+    "@angular/common": "^2.4.4",
+    "@angular/core": "^2.4.4",
+    "@angular/forms": "^2.4.4",
+    "rxjs": "^5.0.3",
+    "zone.js": "0.7.2"
+  },
+  "devDependencies": {
+    "@angular/compiler": "^2.4.4",
+    "@angular/compiler-cli": "^2.4.4",
+    "@angular/platform-server": "^2.4.4",
+    "@types/node": "^7.0.1",
+    "@types/siema": "^1.0.0",
+    "typescript": "^2.1.5"
+  }
+}
