@@ -4,8 +4,6 @@
     "module": "es2015",
     "moduleResolution": "node",
     "sourceMap": true,
-    "noEmit": true,
-    "noEmitHelpers": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "outDir": "lib",
@@ -22,11 +20,9 @@
     "src/**/*"
   ],
   "exclude": [
-    "node_modules",
     "**/*.spec.ts "
   ],
   "angularCompilerOptions": {
-    "genDir": "aot",
-    "skipMetadataEmit": true
+    "genDir": "compiled"
   }
 }

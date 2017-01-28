@@ -1,0 +1,11 @@
+/compiled
+# or
+*.ngFactory.ts
+
+/.idea
+/src
+/assets
+
+.travis.yml
+yarn.lock
+tslint.json

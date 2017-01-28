@@ -30,4 +30,3 @@ install:
 
 script:
   - yarn run build
-  - yarn run build:aot
