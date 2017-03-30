@@ -28,7 +28,7 @@
   "peerDependencies": {
     "@angular/common": "^2.4.5",
     "@angular/core": "^2.4.5",
-    "@angular/forms": "^2.4.5",
+    "@angular/forms": "^4.0.1",
     "siema": "^1.1.1"
   },
   "devDependencies": {
