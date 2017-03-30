@@ -27,7 +27,7 @@
   "homepage": "https://github.com/LexZhukov/ngx-siema#readme",
   "peerDependencies": {
     "@angular/common": "^2.4.5",
-    "@angular/core": "^2.4.5",
+    "@angular/core": "^4.0.1",
     "@angular/forms": "^2.4.5",
     "siema": "^1.1.1"
   },
