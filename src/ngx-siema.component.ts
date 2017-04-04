@@ -27,7 +27,6 @@ export class NgxSiemaComponent implements AfterViewInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    this.instance.removeAllListeners();
     this.instance.destroy();
     this.instance = null;
   }
