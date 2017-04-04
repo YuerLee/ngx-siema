@@ -74,6 +74,12 @@ export class Sample implements OnInit {
             draggable: true,
             threshold: 20,
             loop: false,
+            onInit: () => {
+                // runs immediately after first initialization
+            },
+            onChange: () => {
+                // runs after slide change
+            }
         };
     }
 }
@@ -107,16 +113,16 @@ import { NgxSiemaComponent } from 'ngx-siema';
 export class Sample {
     @ViewChild(NgxSiemaComponent) siema;
 
-    prev() {
-        this.siema.prev();
+    prev(numbers: number) {
+        this.siema.prev(numbers);
     }
 
-    next() {
-        this.siema.next();
+    next(numbers: number) {
+        this.siema.next(numbers);
     }
 
     goTo(slide: number) {
-        this.siema.goto(slide);
+        this.siema.goTo(slide);
     }
 }
 ```

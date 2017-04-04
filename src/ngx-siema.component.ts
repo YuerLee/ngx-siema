@@ -22,6 +22,7 @@ export class NgxSiemaComponent implements AfterViewInit, OnDestroy {
   private instance: any;
 
   ngAfterViewInit() {
+    this.options.selector = `.${this.ngxClass}`;
     this.instance = new Siema(this.options);
   }
 
@@ -31,15 +32,15 @@ export class NgxSiemaComponent implements AfterViewInit, OnDestroy {
     this.instance = null;
   }
 
-  next() {
-    this.instance.next();
+  next(numbers: number = 1) {
+    this.instance.next(numbers);
     this.onNext.emit({
       currentSlide: this.instance.currentSlide,
     });
   }
 
-  prev() {
-    this.instance.prev();
+  prev(numbers: number = 1) {
+    this.instance.prev(numbers);
     this.onPrev.emit({
       currentSlide: this.instance.currentSlide,
     });
